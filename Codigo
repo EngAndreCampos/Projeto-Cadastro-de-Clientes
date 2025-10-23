@@ -1,0 +1,41 @@
+import java.util.Scanner;
+
+// Classe que representa um Cliente
+class Cliente {
+    // Atributos privados
+    private String nome;
+    private String email;
+
+    // Construtor para inicializar os atributos
+    public Cliente(String nome, String email) {
+        this.nome = nome;
+        this.email = email;
+    }
+
+    // Métodos getters
+    public String getNome() {
+        return nome;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        // Lê a linha de entrada
+        String nome = scanner.next();
+        String email = scanner.next();
+
+        // Cria o objeto cliente com os dados fornecidos
+        Cliente cliente = new Cliente(nome, email);
+
+        // Exibe a mensagem formatada conforme solicitado
+        System.out.println("Cliente " + cliente.getNome() + " cadastrado com sucesso! Email: " + cliente.getEmail());
+
+        scanner.close();
+    }
+}
