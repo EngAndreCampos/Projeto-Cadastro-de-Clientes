@@ -12,41 +12,6 @@ Cliente [nome] cadastrado com sucesso! Email: [email]
 
 ---
 
-## Tecnologias
-
-- Java 8 ou superior
-
-## Estrutura do Projeto
-
-.
-├── Main.java
-└── README.md
-
-### Main.java
-
-import java.util.Scanner;
-
-class Cliente {
-    String nome;
-    String email;
-    public Cliente(String nome, String email) {
-        this.nome = nome;
-        this.email = email;
-    }
-}
-
-public class Main {
-    public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
-        String nome = scanner.next();
-        String email = scanner.next();
-        Cliente cliente = new Cliente(nome, email);
-        System.out.println("Cliente " + cliente.nome + " cadastrado com sucesso! Email: " + cliente.email);
-    }
-}
-
---- 
-
 Como Executar
 
 1. Compile o programa:
